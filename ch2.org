@@ -1,0 +1,38 @@
+** Set A
+
+1. ab = $\sqrt{|ab|}$ on set $\mathbb{Q}$
+   Not an operation \because a = 2 and b = 1 gives ab = $\sqrt{2}$ which is irrational.
+
+2. Not an operation 
+   ab = a ln b on set $\mathbb{R}^{}+$
+   taking b = 0.001, ln b < 0 out of positive real numbers.
+
+3. True
+   ab = root of $x^2 - a^{2}b^{2} = 0$ on set $\mathbb{R}$
+   Solving, we get x = $\pm{ab}$. Since a, b $\in \mathbb{R}$, x $\in \mathbb{R}$
+
+4. True. a, b $\in \mathbb{Z}$, then a - b $\in \mathbb{Z}$
+
+5. False. a, b $\in \mathbb{Z}^{+}$, then a - b $\notin \mathbb{Z}^{+}$, if b > a
+
+6. True. ab = a, b $\in \mathbb{Z}^{+}$ and |a - b| $\in Z^{+}
+
+** Set B
+
+1. Commutative. Not Associative. Identity. Not Inverse.
+6. Commutative. Associative. Not Identity. Not Inverse.
+
+** Set D
+
+1. Concatenation is associative.
+   Let c = c_{1}c_{2}...c_{p} \\
+   (ab)c = (a_{1}a_{2}...a_{n}b_{1}b_{2}...b_{m})c_{1}c_{2}...c_{n} \\
+         = a_{1}a_{2}...a_{n}b_{1}(b_{2}...b_{m}c_{1}c_{2}...c_{n}) \\
+         = a(bc)
+2. ab $\ne$ ba
+3. ae = a \\
+   $a * \lambda = a = \lambda * a$ \\
+   Therefore, $\lambda$ is e
+
+
+
