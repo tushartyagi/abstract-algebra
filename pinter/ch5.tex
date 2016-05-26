@@ -68,7 +68,7 @@ A set of equations, involving only the generators and their inverses, is called 
     \item 
       Inverse:
         \begin{alignat*}{3}
-          &log\ a + log\ a^{-1} \ &= &\ e \\ 
+           &log\ a + log\ a^{-1} \ &= &\ e \\ 
           \Rightarrow & log\ a &= & -log\ a^{-1} \\
           \Rightarrow & log a   &= &\ log(\frac{1}{a^{-1}}) \\
           \Rightarrow & a      &= &\ \frac{1}{a^{-1}}
@@ -77,6 +77,110 @@ A set of equations, involving only the generators and their inverses, is called 
       Since $a \in \mathbb{Q}$, $\frac{1}{a^{-1}} \in \mathbb{Q}$, $\therefore log\ a^{-1} \in H$
        
     \end{itemize}
+
+\item $G = \langle R, + \rangle, H = \{log a: a \in \mathbb{Z}, a > 0\}$
+  \begin{itemize}
+    \item 
+      Addition: \\
+
+      Same reasoning as previous question.
+    \item 
+      Inverse: \\
+      As calculated in the previous question, $a^{-1} = \frac{1}{a}$
+      Since $a \in \mathbb{Z}, a^{-1} \notin \mathbb{Z}$
+  \end{itemize}
+
+
+\item $G = \langle R, + \rangle, H = \{x \in \mathbb{R}: tan x \in \mathbb{Q} \}$
+
+  \begin{itemize}
+    \item 
+      Addition: \\
+      Let $x, y \in \mathbb{R}. \\
+      \therefore tan(x+y) = \frac{tanx + tany}{1 - tanx \cdot tany}$
+
+      If $x = y = 45^{\circ}$, then $tan\ x = tan\ y = 1$, which makes the denominator
+      undefined, and therefore addition is not defined for $H$.
+
+  \end{itemize}
+
+
+\item $G = \langle R, \cdot \rangle, H = \{2^{n}3^{m}, m, n \in \mathbb{Z}\}$
+
+  \begin{itemize}
+    \item 
+      Multiplication: \\
+      Let $n, m, n', m' \in \mathbb{Z}. \\
+      2^{n}3^{m} \cdot 2^{n'}3^{m'} = 2^{n+n'}3^{m+m'} \\
+      \because n + n', m + m' \in \mathbb{Z} \\
+      \therefore 2^{n+n'}3^{m+m'} \in H $
+
+    \item 
+      Inverse: \\
+      Since $2^{n}3^{m} \in \mathbb{Z}, \\ $
+      The inverse is $\frac{1}{2^{n}3^{m}} = 2^{-n}3^{-m}$
+      $\because -n, -m \in \mathbb{Z}, \therefore  2^{-n}3^{-m} \in \mathbb{Z}$  
+
+  \end{itemize}
+
+\item $G = \langle R \times R, + \rangle, H = \{(x,y) : y = 2x \}$
+
+  \begin{itemize}
+    \item
+      Addition: \\
+      $(x,y) + (x',y') = (x+x, y+y') \\
+      \because x,\ x',\ y,\ y' \in \mathbb{R}, \\
+      \therefore x+x',\ y+y' \in \mathbb{R} \\
+      \therefore (y+y') = 2(x+x')$
+
+    \item 
+      Inverse: \\
+      $e = (0,0)$ 
+      Inverse: $(-x, -y) \\
+      \because y = 2x \\
+      \Rightarrow -y = -2x \\
+      \Rightarrow y' = 2x'$
+
+  \end{itemize}
+
+\item $G = \langle R \times  R, + \rangle, H = \{(x,y) : x^{2} + y^{2} > 0\}$
+
+  \begin{itemize}
+    \item 
+      Addition \\
+      $(x,y) + (x',y') = (x + x', y+y') \\
+      \Rightarrow (x+x')^{2} + (y+y')^{2} > 0, \\
+      \therefore$ Addition operation is defined for $H$.
+      
+    \item
+      Inverse: \\
+      $\because e = (0,0)$ \\
+      Inverse is $(-x, -y)$ \\
+      Let $x, y \in H, \\
+      \therefore x^{2} + y^{2} > 0, \\
+      \Rightarrow (-x)^{2} + (-y)^{2} > 0 \in H$ \\
+      So inverse is defined.
+
+  \end{itemize}
+
+\item Let $C$ and $D$ be sets, with $C \subseteq D$. Prove that $P_C$ is a subgroup of $P_D$
+
+  In a way, $G = \langle P_D , + \rangle, H = \langle P_c , + \rangle$
+  
+\begin{itemize}
+  \item 
+    Identity: \\ (common to both $P_C$ and $P_D$): $\{phi\}$
+  \item 
+    Inverse: \\
+    $A^{-1} = A$ \\
+    We have already proved this in Chapter 3, Exercise C.
+  \item 
+    Addition: \\
+    Let $A, B \subseteq H$, \\
+    $A + B = (A - B) \cup (B - A)$
+    Since $A \subseteq P_C, (A - B) \subseteq P_C$. Similarly, $(B - A) \subseteq P_C$. So the operation of symmetric difference is closed on subgroup $H$. 
+
+\end{itemize}
 
   \end{enumerate}
 
