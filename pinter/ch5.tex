@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{amssymb,amsmath,latexsym}
+\usepackage{amssymb,amsmath,latexsym,mathrsfs}
 
 \begin{document}
 \title{A Book of Abstract Algebra: Solutions to Chapter 5}
@@ -185,5 +185,40 @@ A set of equations, involving only the generators and their inverses, is called 
 
   \end{enumerate}
 
+\subsection*{Set B}
+\label{subsec:Set B}
+
+\begin{enumerate}
+\item $G = \langle \mathscr{F}(R), + \rangle$, $H = \{f \in \mathscr{F}(R) : f(x) = 0 \ \forall x \in [0,1]\}$
+  \begin{itemize}
+    \item 
+      Addition \\
+      Let $f, g \in H \\
+      f(x) = 0, g(x) = 0, \forall x \in [0,1] \\
+      \lbrack f + g \rbrack (x) = f(x) + g(x) = 0 + 0 = 0 \\
+      \therefore f + g \in H$
+    \item 
+      Inverse \\
+      Let $f \in H$, then \\
+      $\lbrack -f \rbrack (x) = -f(x) = 0 = f(x) x \in [0,1]$
+  \end{itemize}
+
+\item $G = \langle \mathscr{F}(R), + \rangle$, $H = \{f \in \mathscr{F}(R) : f(-x) = -f(x) \}$
+\begin{itemize}
+  \item Addition \\
+      Let $f, g \in H \\
+      \lbrack f + g \rbrack (-x) \\
+      = f(-x) + g(-x) \\
+      = -f(x) - g(x) \\
+      = -(f(x) + g(x)) \\
+      = -\lbrack f + g \rbrack (x) \\
+      \therefore f + g \in H$
+
+    \item Inverse \\
+      By the identity law, the identity of $f(x)$ is $-f(x)$.
+      
+\end{itemize}
+
+\end{enumerate}
 
 \end{document}
